@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar Sekeres — Tatuador | Geometry · Dotwork · Neotradicional | CDMX & Puebla</title>
+    <meta name="description" content="Oskar Sekeres (@sekerestattoo) — Tatuador especializado en Geometría, Dotwork y Neotradicional. CDMX y Puebla, México. Agenda tu cita.">
+    <meta name="keywords" content="Oskar Sekeres, sekerestattoo, tatuador CDMX, tatuador Puebla, geometric tattoo Mexico, dotwork, neotradicional, tatuajes geometricos">
+    <meta name="author" content="Oskar Sekeres">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bayouwebstudio.com/sekerestattoo/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔷</text></svg>">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Oskar Sekeres — Tatuador | CDMX & Puebla">
+    <meta property="og:description" content="Geometría, Dotwork y Neotradicional. Agenda tu cita.">
+    <meta property="og:url" content="https://bayouwebstudio.com/sekerestattoo/">
+    <meta property="og:image" content="https://bayouwebstudio.com/sekerestattoo/gallery/photo_1.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oskar Sekeres — Tatuador | CDMX & Puebla">
+    <meta name="twitter:description" content="Geometría, Dotwork y Neotradicional. Agenda tu cita.">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TattooParlor",
+        "name": "Oskar Sekeres Tattoo",
+        "alternateName": "sekerestattoo",
+        "description": "Tatuador especializado en Geometría, Dotwork y Neotradicional",
+        "url": "https://bayouwebstudio.com/sekerestattoo/",
+        "areaServed": ["Ciudad de México", "Puebla"],
+        "sameAs": [
+            "https://www.instagram.com/sekerestattoo/",
+            "https://www.tiktok.com/@sekerestattoo",
+            "https://www.facebook.com/OskarSekeres"
+        ]
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --card: #1a1a1a;
+            --accent: #c4a265;
+            --accent-light: #dfc48b;
+            --text: #e8e8e8;
+            --text-muted: #888;
+            --border: #2a2a2a;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(ellipse at 30% 20%, rgba(196, 162, 101, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(196, 162, 101, 0.05) 0%, transparent 50%),
+                var(--bg);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('gallery/photo_2.jpg') center/cover;
+            opacity: 0.12;
+            filter: grayscale(60%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.4rem 1.5rem;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            border-radius: 2px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 span {
+            display: block;
+            font-size: 0.35em;
+            letter-spacing: 0.3em;
+            color: var(--accent);
+            margin-top: 0.5rem;
+            font-weight: 400;
+        }
+
+        .hero-styles {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .hero-styles div {
+            text-align: center;
+        }
+
+        .hero-styles .icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero-styles .label {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .hero-location {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-location span { color: var(--accent); }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--accent);
+            color: var(--bg);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(196, 162, 101, 0.3);
+        }
+
+        .scroll-hint {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-8px); }
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 0.7rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .about-img img {
+            width: 100%;
+            display: block;
+            filter: grayscale(20%);
+            transition: filter 0.5s;
+        }
+
+        .about-img:hover img { filter: grayscale(0%); }
+
+        .about-text h3 {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .style-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .style-tags span {
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--border);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            border-radius: 2px;
+        }
+
+        /* Gallery */
+        .gallery-bg {
+            background: var(--surface);
+            padding: 5rem 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 4px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease, filter 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+            filter: brightness(1.1);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 40%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover::after { opacity: 1; }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+            padding: 4rem 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 200;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+        }
+
+        /* Highlights (story categories) */
+        .highlights {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .highlight {
+            text-align: center;
+        }
+
+        .highlight-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-size: 1.5rem;
+            background: var(--surface);
+        }
+
+        .highlight span {
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* Contact */
+        .contact-bg {
+            background: var(--surface);
+            padding: 5rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .contact-card {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: border-color 0.3s;
+        }
+
+        .contact-card:hover { border-color: var(--accent); }
+
+        .contact-card .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card h3 {
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-card a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-card a:hover { color: var(--accent); }
+
+        /* Social */
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            opacity: 0.5;
+            font-size: 0.7rem;
+        }
+
+        /* Floating Book Button */
+        .book-float {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: var(--bg);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(196, 162, 101, 0.4);
+            transition: all 0.3s;
+            animation: pulse-glow 3s infinite;
+        }
+
+        .book-float:hover {
+            background: var(--accent-light);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(196, 162, 101, 0.5);
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 4px 20px rgba(196, 162, 101, 0.4); }
+            50% { box-shadow: 0 4px 30px rgba(196, 162, 101, 0.6); }
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            background: rgba(0,0,0,0.95);
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active { display: flex; }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            z-index: 2001;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+            .stat-number { font-size: 1.8rem; }
+            .hero-styles { gap: 1.2rem; }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 2px; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Book Button -->
+    <a href="https://ig.me/m/sekerestattoo" target="_blank" class="book-float">✦ Reservar</a>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🇲🇽 CDMX · Puebla</div>
+            <h1>Oskar Sekeres
+                <span>Tatuador · Artista</span>
+            </h1>
+            <div class="hero-styles">
+                <div>
+                    <div class="icon">◇</div>
+                    <div class="label">Geometry</div>
+                </div>
+                <div>
+                    <div class="icon">⬡</div>
+                    <div class="label">Dotwork</div>
+                </div>
+                <div>
+                    <div class="icon">❋</div>
+                    <div class="label">Neotradicional</div>
+                </div>
+                <div>
+                    <div class="icon">✿</div>
+                    <div class="label">Tradicional</div>
+                </div>
+            </div>
+            <p class="hero-location">Basado en <span>Ciudad de México</span> y <span>Puebla</span></p>
+            <a href="https://ig.me/m/sekerestattoo" target="_blank" class="btn-primary">Agenda Tu Cita</a>
+        </div>
+        <div class="scroll-hint">↓ Portafolio</div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div>
+            <div class="stat-number">6K+</div>
+            <div class="stat-label">Seguidores</div>
+        </div>
+        <div>
+            <div class="stat-number">173</div>
+            <div class="stat-label">Trabajos</div>
+        </div>
+        <div>
+            <div class="stat-number">2</div>
+            <div class="stat-label">Ciudades</div>
+        </div>
+    </div>
+
+    <!-- Specialties -->
+    <section class="section">
+        <div class="section-title">
+            <h2>Especialidades</h2>
+            <p>Estilos & Categorías</p>
+        </div>
+        <div class="highlights">
+            <div class="highlight">
+                <div class="highlight-circle">📐</div>
+                <span>Digital</span>
+            </div>
+            <div class="highlight">
+                <div class="highlight-circle">🌹</div>
+                <span>Tradicional</span>
+            </div>
+            <div class="highlight">
+                <div class="highlight-circle">✨</div>
+                <span>Pequeños</span>
+            </div>
+            <div class="highlight">
+                <div class="highlight-circle">⚡</div>
+                <span>Flash</span>
+            </div>
+            <div class="highlight">
+                <div class="highlight-circle">◈</div>
+                <span>Geometry</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section">
+        <div class="about-grid">
+            <div class="about-img">
+                <img src="gallery/photo_1.jpg" alt="Tatuaje geométrico por Oskar Sekeres" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h3>Sobre Oskar</h3>
+                <p>Oskar Sekeres es un tatuador mexicano basado entre Ciudad de México y Puebla, especializado en geometría, dotwork y neotradicional.</p>
+                <p>Con un enfoque artístico que fusiona lo tradicional con lo contemporáneo, cada pieza es única — desde mandalas intrincados y composiciones geométricas hasta piezas neotradicionales a gran escala.</p>
+                <p>Disponible para citas por DM. Diseños personalizados y flash disponibles.</p>
+                <div class="style-tags">
+                    <span>Geometry</span>
+                    <span>Dotwork</span>
+                    <span>Neotradicional</span>
+                    <span>Tradicional</span>
+                    <span>Flash</span>
+                    <span>Blackwork</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-bg" id="galeria">
+        <div class="section-title" style="padding: 0 1.5rem; margin-bottom: 3rem;">
+            <h2>Portafolio</h2>
+            <p>Trabajos Recientes</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_1.jpg" alt="Tatuaje geométrico blackwork" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_2.jpg" alt="Tatuaje dotwork mandala" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_3.jpg" alt="Tatuaje neotradicional" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_4.jpg" alt="Tatuaje geométrico en brazo" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_5.jpg" alt="Manga completa blackwork" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_6.jpg" alt="Tatuaje neotradicional pieza grande" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_7.jpg" alt="Tatuaje floral geométrico en pecho" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_8.jpg" alt="Tatuaje floral linework" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_9.jpg" alt="Tatuaje floral en pecho" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_10.jpg" alt="Mandala dotwork en brazo" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_11.jpg" alt="Manga completa neotradicional" loading="lazy"></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery/photo_12.jpg" alt="Tatuaje geométrico manga" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-bg" id="contacto">
+        <div class="section-title" style="padding: 0 1.5rem; margin-bottom: 3rem;">
+            <h2>Contacto</h2>
+            <p>Agenda Tu Cita</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="card-icon">📍</div>
+                <h3>Ubicación</h3>
+                <p>CDMX & Puebla, México</p>
+            </div>
+            <div class="contact-card">
+                <div class="card-icon">📱</div>
+                <h3>Instagram</h3>
+                <p><a href="https://instagram.com/sekerestattoo" target="_blank">@sekerestattoo</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="card-icon">💬</div>
+                <h3>Citas</h3>
+                <p><a href="https://ig.me/m/sekerestattoo" target="_blank">Envía un DM</a></p>
+            </div>
+        </div>
+
+        <div class="social-links" style="margin-top: 3rem;">
+            <a href="https://instagram.com/sekerestattoo" target="_blank" title="Instagram">📷</a>
+            <a href="https://www.tiktok.com/@sekerestattoo" target="_blank" title="TikTok">🎵</a>
+            <a href="https://www.facebook.com/OskarSekeres" target="_blank" title="Facebook">📘</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Oskar Sekeres. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem;"><a href="https://bayouwebstudio.com" target="_blank">Website by Bayou Web Studios</a></p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="Tatuaje ampliado">
+    </div>
+
+    <script>
+        function openLightbox(el) {
+            const img = el.querySelector('img');
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+        // Smooth reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.gallery-item, .contact-card, .highlight').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
